@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+
+
+body {
+
+  font-family: "Paprika", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background: #130e0ea6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#corpo-main {
+  background: #312c2c63;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1200px;
+  height: 90vh;
+}
+
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #0e000063;
+  width: 100%;
+}
+
+.header-main h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-main img {
+  width: 80px;
+}
+
+.header-main button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#filtro-main {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#filtro-main button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#filtro-main button:hover {
+  background: #312c2c63;
+  color: black;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  box-shadow: 0 10px 20px 0 rgba(011,1,1,1.2);
+  width: calc(25% - 20px); 
+  height: 500px;
+  margin: 10px;
+  opacity: 0;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+}
+
+.container {
+  padding: 2px 16px;
+}
