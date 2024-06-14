@@ -1,5 +1,5 @@
 function sair() {
-    window.location.href = 'entrada.html';
+    window.location.href = 'index.html';
     sessionStorage.setItem('logado', 'false');
 }
 
